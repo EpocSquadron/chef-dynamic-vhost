@@ -6,7 +6,7 @@
 #
 
 include_recipe "apache2"
-include_recipe "dynamic-vhosts::mod_vhost_alias"
+include_recipe "chef-dynamic-vhost::mod_vhost_alias"
 
 # Install the generic vhosts file.
 template "httpd-vhosts.conf" do
